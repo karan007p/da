@@ -1,0 +1,81 @@
+Q.2)Createthefoll
+ owingdatasetinpython&Convertthecategori
+ calvaluesintonumeri
+ format.Appl
+ y
+ Theapriorial
+ gorithmontheabovedatasettogeneratethefrequenti
+ rules.Repeat
+ Theprocesswithdifferentmi
+ n_supvalues.
+ No|Company| model|year
+ 1. Tata.
+ Nexon. 2017
+ 2. MG. Astor. 2021
+ 3. Kia.
+ Seltos. 2019
+ 4. Hyundai. Creta. 2015
+ Ans:
+ Importpandasaspd
+ #Createthedataset
+ Data={‘No’:[1,2,3,4]
+ ‘Company’:[‘
+ ,
+ Tata’,‘
+ MG’,‘Kia’
+ ‘Model’
+ :[‘Nexon’
+ ,‘Astor’
+ ‘Year’
+ ,‘Hyundai’
+ ,‘Seltos’
+ :[2017,2021,2019,2015]}
+ Df=pd.DataFrame(data)
+ #Convertcategoricalval
+ ],
+ ,‘Creta’
+ ],
+ uesintonumericformat
+ Df[‘
+ Company’]=pd.Categorical
+ (df[‘
+ Df[‘
+ Model’]=pd.Categori
+ cal(df[
+ Company’])
+ ‘Model’
+ ])
+ Df[‘
+ Company’]=df[‘
+ Company’].cat.
+ codes
+ c
+ temsetsandassociation
+Df[‘
+ Model’]=df[‘
+ Model’].
+ cat.codes
+ Print(df)
+ Frommlxtend.frequent_patternsi
+ mportapriori
+ Frommlxtend.frequent_patternsi
+ mportassociati
+ on_rules
+ #Generatefrequentitemsetswithmin_sup=0.5
+ Frequent_i
+ temsets=apriori
+ (df,min_support=0.
+ Print(fr
+ equent_itemsets)
+ #Generateassociati
+ 5,use_colnames=True)
+ onruleswithmin_threshol
+ d=0.7
+ Associati
+ on_rules=associati
+ on_rules(frequent_i
+ min_threshol
+ d=0.7)
+ Print(associ
+ ation_rul
+ es)
